@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import profileImg from "../assets/KakaoTalk_20220620_163952359.jpg";
-import phoneLogo from "../assets/icons8-phone-50.png";
-import emailLogo from "../assets/icons8-mail-50.png";
-import githubLogo from "../assets/icons8-github-32.png";
+import profileImg from "../assets/img/KakaoTalk_20220620_163952359.jpg";
+import phoneLogo from "../assets/img/icons8-phone-50.png";
+import emailLogo from "../assets/img/icons8-mail-50.png";
+import githubLogo from "../assets/img/icons8-github-32.png";
 
 export default function Introduction() {
   return (

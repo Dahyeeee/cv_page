@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import htmlLogo from "../assets/icons8-html-5-96.png";
-import cssLogo from "../assets/icons8-css3-96.png";
-import jsLogo from "../assets/icons8-javascript-96.png";
-import tsLogo from "../assets/icons8-typescript-96.png";
-import reactLogo from "../assets/icons8-react-a-javascript-library-for-building-user-interfaces-96.png";
-import reduxLogo from "../assets/icons8-redux-an-open-source-javascript-library-for-managing-application-state-96.png";
+import htmlLogo from "../assets/img/icons8-html-5-96.png";
+import cssLogo from "../assets/img/icons8-css3-96.png";
+import jsLogo from "../assets/img/icons8-javascript-96.png";
+import tsLogo from "../assets/img/icons8-typescript-96.png";
+import reactLogo from "../assets/img/icons8-react-a-javascript-library-for-building-user-interfaces-96.png";
+import reduxLogo from "../assets/img/icons8-redux-an-open-source-javascript-library-for-managing-application-state-96.png";
 
 export default function Skill() {
   return (

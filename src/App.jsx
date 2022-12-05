@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./component/Header";
 import Introduction from "./component/Introduction";
+import Projects from "./component/Projects";
 import Skill from "./component/Skill";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Introduction />
       <Skill />
+      <Projects />
     </Box>
   );
 }

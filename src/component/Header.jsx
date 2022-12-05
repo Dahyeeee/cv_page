@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import gobleIcon from "../assets/icons8-globe-50.png";
+import gobleIcon from "../assets/img/icons8-globe-50.png";
 
 export default function Header() {
   return (
