@@ -1,50 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import profileImg from "../assets/img/KakaoTalk_20220620_163952359.jpg";
-import phoneLogo from "../assets/img/icons8-phone-50.png";
-import emailLogo from "../assets/img/icons8-mail-50.png";
-import githubLogo from "../assets/img/icons8-github-32.png";
+import profile from "../assets/data/profile";
 
 export default function Introduction() {
+  const { imgUrl, imgAlt, subTitle, Introductionpargraphs, contacts } = profile;
+
   return (
     <Profile>
-      <ProfileImg
-        src={profileImg}
-        alt="Dahye on the almost peak of the mountain"
-      />
+      <ProfileImg src={imgUrl} alt={imgAlt} />
       <Introduce>
-        <h3>Conditional Achiever</h3>
-        <p>
-          I'm quite easy going and not so competitive in general. But when it
-          comes to programming, I become a passionate and enthusiastic achiever.{" "}
-          <br />
-          I'm interested in a sustainable programming, which means I want to
-          write code that never require to be written all over again. I'm a
-          self-taught learner who can pick up new skills by searching and
-          studying by myself.
-        </p>
-        I have strong communication skills and work ethic. Asking questions and
-        helping people without any hesitation are my good qualities to work with
-        others.
+        <h3>{subTitle}</h3>
+        {Introductionpargraphs.map((each, ind) => (
+          <p key={ind}>{each}</p>
+        ))}
         <h3>How to reach me</h3>
-        <Contact>
-          <ContactLogo src={phoneLogo} alt="phone Icon" />
-          <span>82+ 010- 2173- 3071</span>
-        </Contact>
-        <Contact>
-          <ContactLogo src={emailLogo} alt="mail Icon" />
-          <span>06robin11@gmail.com</span>
-        </Contact>
-        <Contact>
-          <ContactLogo src={githubLogo} alt="github Icon" />
-          <a
-            href="https://github.com/Dahyeeee"
-            target="_blanck"
-            rel="noopener noreferrer"
-          >
-            <span>https://github.com/Dahyeeee</span>
-          </a>
-        </Contact>
+        {contacts.map((contact) => (
+          <Contact key={contact.name}>
+            <ContactLogo src={contact.logoUrl} alt={contact.logoAlt} />
+            {contact.link ? (
+              <a href={contact.link} target="_blanck" rel="noopener noreferrer">
+                <span>{contact.content}</span>
+              </a>
+            ) : (
+              <span>{contact.content}</span>
+            )}
+          </Contact>
+        ))}
       </Introduce>
     </Profile>
   );

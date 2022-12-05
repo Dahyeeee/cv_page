@@ -15,6 +15,7 @@ export default function Header() {
 
 const Title = styled.header`
   margin: 1rem 0;
+  text-align: center;
 `;
 
 const LanguageBtn = styled.button`

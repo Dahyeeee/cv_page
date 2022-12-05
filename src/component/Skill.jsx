@@ -1,49 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import htmlLogo from "../assets/img/icons8-html-5-96.png";
-import cssLogo from "../assets/img/icons8-css3-96.png";
-import jsLogo from "../assets/img/icons8-javascript-96.png";
-import tsLogo from "../assets/img/icons8-typescript-96.png";
-import reactLogo from "../assets/img/icons8-react-a-javascript-library-for-building-user-interfaces-96.png";
-import reduxLogo from "../assets/img/icons8-redux-an-open-source-javascript-library-for-managing-application-state-96.png";
+import skills from "../assets/data/skills";
 
 export default function Skill() {
   return (
-    <div>
+    <>
       <Title>{`{ Skill }`}</Title>
       <SkillLogos>
-        <SkillEach>
-          <SkillLogo src={htmlLogo} alt="html logo" />
-          <span>HTML</span>
-        </SkillEach>
-        <SkillEach>
-          <SkillLogo src={cssLogo} />
-          <span>CSS</span>
-        </SkillEach>
-        <SkillEach>
-          <SkillLogo src={jsLogo} alt="js logo" />
-          <span>Javascript</span>
-        </SkillEach>
-        <SkillEach>
-          <imgSkillLogo src={tsLogo} alt="ts logo" />
-          <span>Typescript</span>
-        </SkillEach>
-        <SkillEach>
-          <SkillLogo src={reactLogo} />
-          <span>react</span>
-        </SkillEach>
-        <SkillEach>
-          <SkillLogo src={reduxLogo} alt="redux logo" />
-          <span>redux</span>
-        </SkillEach>
+        {skills.map((skill) => (
+          <SkillEach key={skill.name}>
+            <SkillLogo src={skill.logo} alt={`${skill.name} logo`} />
+            <span>{skill.name}</span>
+          </SkillEach>
+        ))}
       </SkillLogos>
-    </div>
+    </>
   );
 }
 
-const Title = styled.h2`
-  margin: 2rem 0;
-  font-size: 40px;
+export const Title = styled.h2`
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  font-size: 50px;
   color: navy;
   letter-spacing: 0.5rem;
 `;
