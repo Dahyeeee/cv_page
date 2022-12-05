@@ -9,7 +9,7 @@ import reduxLogo from "../assets/img/icons8-redux-an-open-source-javascript-libr
 
 export default function Skill() {
   return (
-    <div class="techincs">
+    <div>
       <Title>{`{ Skill }`}</Title>
       <SkillLogos>
         <SkillEach>

@@ -12,6 +12,7 @@ const projects = [
       "reduced time complexity from O(n2) to O(n) using indexing.",
     ],
     imgUrl: newsProjectImg,
+    imgAlt: "News Searh App image",
     link: "https://lots-of-grace.tistory.com/71?category=578709",
   },
   {
@@ -24,6 +25,7 @@ const projects = [
       "used React-hook-form to make a signup form.",
     ],
     imgUrl: lensProjectImg,
+    imgAlt: "lens website signup page image",
     link: "https://lots-of-grace.tistory.com/71?category=578709",
   },
 ];

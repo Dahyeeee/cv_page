@@ -7,8 +7,9 @@ export default function Projects() {
   return (
     <ProjectsWrapper>
       <h2>{`{ Project }`}</h2>
-      <Project data={projects[0]} />
-      <Project data={projects[1]} />
+      {projects.map((project) => (
+        <Project data={project} key={project.title} />
+      ))}
     </ProjectsWrapper>
   );
 }
