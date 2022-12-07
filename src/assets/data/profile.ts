@@ -2,12 +2,13 @@ import profileImg from "../img/KakaoTalk_20220620_163952359.jpg";
 import phoneLogo from "../img/icons8-phone-50.png";
 import emailLogo from "../img/icons8-mail-50.png";
 import githubLogo from "../img/icons8-github-32.png";
+import { ProfileType } from "../../type/types";
 
-const profile = {
+const profile: ProfileType = {
   imgUrl: profileImg,
   imgAlt: "dahye is smiling wearing black top, outdoor",
   subTitle: "Conditional Achiever",
-  Introductionpargraphs: [
+  introductionParagraphs: [
     "I'm quite easy going and not so competitive in general. But when it comes to programming, I become a passionate and enthusiastic achiever.",
     "I'm interested in a sustainable programming, which means I want to write code that never require to be written all over again. I'm a self-taught learner who can pick up new skills by searching and studying by myself.",
     "I have strong communication skills and work ethic. Asking questions and helping people without any hesitation are my good qualities to work with others.",

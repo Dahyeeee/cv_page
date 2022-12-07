@@ -1,13 +1,15 @@
-const educations = [
+import { EudcationType } from "../../type/types";
+
+const educations: EudcationType[] = [
   {
-    insititution: "Fast-Campus",
+    institution: "Fast-Campus",
     studySubject: "Front-end Developer Education",
-    duration: "(22.07 - 22.10)",
+    period: "(22.07 - 22.10)",
   },
   {
-    insititution: "Kyunghee Uni",
+    institution: "Kyunghee Uni",
     studySubject: "major in English-Translation",
-    duration: "(13.03 - 18.02)",
+    period: "(13.03 - 18.02)",
   },
 ];
 

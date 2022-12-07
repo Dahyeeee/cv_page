@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { ProjectType } from "../type/types";
 
-export default function Project({ data }) {
-  const { title, description, contribute, imgUrl, imgAlt, link } = data;
+type PropsType = {
+  project: ProjectType;
+};
+
+export default function Project({ project }: PropsType) {
+  const { title, description, contribute, imgUrl, imgAlt, link } = project;
 
   return (
     <ProjectWrapper>

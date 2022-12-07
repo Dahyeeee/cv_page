@@ -8,12 +8,12 @@ export default function Education() {
     <>
       <Title>{`{ Education }`}</Title>
       {educations.map((education) => {
-        const { insititution, studySubject, duration } = education;
+        const { institution, studySubject, period } = education;
         return (
-          <EducationEachSt>
-            <SubTitleSt>{insititution}</SubTitleSt>
+          <EducationEachSt key={institution}>
+            <SubTitleSt>{institution}</SubTitleSt>
             <ContentSt>{studySubject}</ContentSt>
-            <DurationSt>{duration}</DurationSt>
+            <DurationSt>{period}</DurationSt>
           </EducationEachSt>
         );
       })}

@@ -3,14 +3,15 @@ import styled from "styled-components";
 import profile from "../assets/data/profile";
 
 export default function Introduction() {
-  const { imgUrl, imgAlt, subTitle, Introductionpargraphs, contacts } = profile;
+  const { imgUrl, imgAlt, subTitle, introductionParagraphs, contacts } =
+    profile;
 
   return (
     <Profile>
       <ProfileImg src={imgUrl} alt={imgAlt} />
       <Introduce>
         <h3>{subTitle}</h3>
-        {Introductionpargraphs.map((each, ind) => (
+        {introductionParagraphs.map((each, ind) => (
           <p key={ind}>{each}</p>
         ))}
         <h3>How to reach me</h3>

@@ -4,8 +4,9 @@ import jsLogo from "../img/icons8-javascript-96.png";
 import tsLogo from "../img/icons8-typescript-96.png";
 import reactLogo from "../img/icons8-react-a-javascript-library-for-building-user-interfaces-96.png";
 import reduxLogo from "../img/icons8-redux-an-open-source-javascript-library-for-managing-application-state-96.png";
+import { SkillType } from "../../type/types";
 
-const skills = [
+const skills: SkillType[] = [
   {
     logo: htmlLogo,
     name: "HTML",
