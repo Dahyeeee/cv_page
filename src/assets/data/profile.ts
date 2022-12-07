@@ -2,6 +2,7 @@ import profileImg from "../img/KakaoTalk_20220620_163952359.jpg";
 import phoneLogo from "../img/icons8-phone-50.png";
 import emailLogo from "../img/icons8-mail-50.png";
 import githubLogo from "../img/icons8-github-32.png";
+import blogLogo from "../img/icons8-blog-30.png";
 import { ProfileType } from "../../type/types";
 
 const profile: ProfileType = {
@@ -35,7 +36,7 @@ const profile: ProfileType = {
     },
     {
       name: "blog",
-      logoUrl: githubLogo,
+      logoUrl: blogLogo,
       logoAlt: "blog Icon",
       content: "https://lots-of-grace.tistory.com/",
       link: "https://lots-of-grace.tistory.com/",
