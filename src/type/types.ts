@@ -32,3 +32,9 @@ export type SkillType = {
   logo: string;
   name: string;
 };
+
+export type LanguageType = {
+  test: string;
+  score: string;
+  date: string;
+};

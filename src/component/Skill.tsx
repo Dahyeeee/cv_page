@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import skills from "../assets/data/skills";
+import { SkillType } from "../type/types";
 
 export default function Skill() {
   return (
     <>
       <Title>{`{ Skill }`}</Title>
       <SkillLogos>
-        {skills.map((skill) => (
+        {skills.map((skill: SkillType) => (
           <SkillEach key={skill.name}>
             <SkillLogo src={skill.logo} alt={`${skill.name} logo`} />
             <span>{skill.name}</span>

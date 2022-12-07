@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import educations from "../assets/data/educations";
+import { EudcationType } from "../type/types";
 import { Title } from "./Skill";
 
 export default function Education() {
   return (
     <>
       <Title>{`{ Education }`}</Title>
-      {educations.map((education) => {
+      {educations.map((education: EudcationType) => {
         const { institution, studySubject, period } = education;
         return (
           <EducationEachSt key={institution}>
