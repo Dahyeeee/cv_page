@@ -1,5 +1,5 @@
 import newsProjectImg from "../img/newsSearchApp.png";
-import lensProjectImg from "../img/lensissingup.png";
+import lensProjectImg from "../img/lensWebSite.png";
 
 const projects = [
   {
@@ -22,7 +22,7 @@ const projects = [
     contribute: [
       "worked with UX/UI team and backend developer team.",
       "used React-query to get data from server and manupulate them.",
-      "used React-hook-form to make a signup form.",
+      "used React-hook-form to make a signup/login form.",
     ],
     imgUrl: lensProjectImg,
     imgAlt: "lens website signup page image",
