@@ -9,7 +9,7 @@ export default function Language() {
     <>
       <Title>{`{ Language }`}</Title>
       {languages.map((language: LanguageType) => (
-        <Wrapper>
+        <Wrapper key={language.test}>
           <span>{language.test + "  :   "}</span>
           <Bold>{language.score + " "}</Bold>
           <span>{language.date}</span>
@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 30%;
+  margin-bottom: 2rem;
 `;
 const Bold = styled.span`
   font-weight: bold;

@@ -1,13 +1,27 @@
+import { MouseEventHandler } from "react";
 import styled from "styled-components";
 import gobleIcon from "../assets/img/icons8-globe-50.png";
 
-export default function Header() {
+type PropsType = {
+  language: string;
+  setLanguage: (lan: string) => void;
+};
+
+export default function Header({ language, setLanguage }: PropsType) {
+  const changeLanguage = (e: any) => {
+    if (e.target.value === "English") {
+      setLanguage("en");
+    } else {
+      setLanguage("ko");
+    }
+  };
+
   return (
     <Title>
-      <h1>{`{ Front-end Engineer }`} Dahye Yun</h1>
-      <LanguageBtn role="button">
+      <h1>{`{ Front-end Engineer } Dahye Yun`}</h1>
+      <LanguageBtn role="button" onClick={changeLanguage}>
         <ButtonLogo src={gobleIcon} alt="globe icon" />
-        한국어
+        {language}
       </LanguageBtn>
     </Title>
   );

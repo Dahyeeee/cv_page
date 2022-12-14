@@ -7,7 +7,7 @@ import { ProfileType } from "../../type/types";
 
 const profile: ProfileType = {
   imgUrl: profileImg,
-  imgAlt: "dahye is smiling wearing black top, outdoor",
+  imgAlt: "A female smiling wearing a black top",
   subTitle: "Conditional Achiever",
   introductionParagraphs: [
     "I'm quite easy going and not so competitive in general. But when it comes to programming, I become a passionate and enthusiastic achiever.",
